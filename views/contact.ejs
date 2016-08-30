@@ -1,0 +1,100 @@
+<%- include head.ejs %>
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<h1>联系我们</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- container -->
+	<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="section-title">你的信息</h3>
+						<p>
+							Lorem存有是打印排版的印刷排版业只是虚拟文本。Lorem存有一直是虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒它做字体样本。
+						</p>
+						
+						<form class="form-light mt-20" role="form" id="fm" action="/edit" method="post">
+							<div class="form-group">
+								<label>姓名</label>
+								<input type="text" class="form-control" name="user" placeholder="姓名">
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>邮箱</label>
+										<input type="email" class="form-control" name='email' placeholder="邮箱地址">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>手机</label>
+										<input type="text" class="form-control" name="phone" placeholder="电话号码">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>主题</label>
+								<input type="text" class="form-control" name="subject" placeholder="主题">
+							</div>
+							<div class="form-group">
+								<label>信息</label>
+								<textarea class="form-control" name="message" id="message" placeholder="在这里写下你的信息" style="height:100px;"></textarea>
+							</div>
+							<button type="submit" class="btn btn-two">发送信息</button><p><br/></p>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="section-title">官方地址</h3>
+								<div class="contact-info">
+									<h5>地址</h5>
+									<p>美国卡尔维尔第五街道</p>
+									
+									<h5>邮箱：styelfun@gmail.com</h5>
+									<p>信息@viaNana will</p>
+									
+									<h5>手机</h5>
+									<p>+09 5900 5466 5771</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h3 class="section-title">工作时间</h3>
+								<div class="contact-info">
+									<h5>星期一 - 星期五</h5>
+									<p>09:00 AM - 6:30 PM</p>
+									
+									<h5>星期六</h5>
+									<p>关闭</p>
+									
+									<h5>星期天</h5>
+									<p>关闭</p>
+								</div>
+							</div>
+						</div>
+						<h3 class="section-title">保持联系</h3>
+						<p>
+						你和我们的交流将是我们服务的最后回报
+						</p>						
+					</div>
+				</div>
+			</div>
+	<!-- /container -->
+	<%- include footer.ejs %>
+
+
+	<!-- Google Maps -->
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
+	<!--<script src="views/assets/js/google-map.js"></script>-->
+
+
+
+</body>
+</html>

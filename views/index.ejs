@@ -1,0 +1,317 @@
+<%- include head %>
+	<!-- /.navbar -->
+
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+					<div class="fluid_container">
+                    <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+                      <% data.forEach(function (n,i) { %>
+
+                        <div data-thumb="views/assets/images/slides/thumbs/img1.jpg" data-src="<%= n.imageUrl %>">
+                        </div>
+
+
+                        <% }); %>
+
+                        <!--<div data-thumb="views/assets/images/slides/thumbs/img2.jpg" data-src="views/assets/images/slides/img2.jpg">-->
+                        <!--</div>-->
+                        <!--<div data-thumb="views/assets/images/slides/thumbs/img3.jpg" data-src="views/assets/images/slides/img3.jpg">-->
+                        <!--</div> -->
+                    </div><!-- #camera_wrap_3 -->
+                </div><!-- .fluid_container -->
+		</div>
+	</header>
+	<!-- /Header -->
+
+  
+      <section class="news-box top-margin">
+        <div class="container">
+            <h2><span>我们提供..</span></h2>
+            <div class="row">
+            <% newsList.forEach(function(n,i){%>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="newsBox">
+                        <div class="thumbnail">
+                            <figure><img src="<%= n.imgUrl %>" alt=""></figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <div class="box">
+                                        <p class="title"><strong><%= n.title%></strong></p>
+                                        <p><%= n.description %></p>
+                                    </div>
+                                    <div>
+                                        <a href="<%= n.url %>" class="btn-inline">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           <%  }); %>
+
+                <!--<div class="col-lg-4 col-md-4 col-sm-12">-->
+                    <!--<div class="newsBox">-->
+                        <!--<div class="thumbnail">-->
+                            <!--<figure><img src="views/assets/images/news3.jpg" alt=""></figure>-->
+                            <!--<div class="caption maxheight2">-->
+                            <!--<div class="box_inner">-->
+                                        <!--<div class="box">-->
+                                            <!--<p class="title"><strong>DESIGN</strong></p>-->
+                                            <!--<p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>-->
+                                        <!--</div>-->
+                                        <!--<div>-->
+                                            <!--<a href="#" class="btn-inline">more</a>-->
+                                        <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-lg-4 col-md-4 col-sm-12">-->
+                    <!--<div class="newsBox">-->
+                        <!--<div class="thumbnail">-->
+                            <!--<figure><img src="views/assets/images/news4.jpg" alt=""></figure>-->
+                            <!--<div class="caption maxheight2">-->
+                           <!--<div class="box_inner">-->
+                                        <!--<div class="box">-->
+                                            <!--<p class="title"><strong>INSTALLATION</strong></p>-->
+                                            <!--<p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>-->
+                                        <!--</div>-->
+                                        <!--<div>-->
+                                            <!--<a href="#" class="btn-inline">more</a>-->
+                                        <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+   
+  
+      <section class="container">
+      <div class="row">
+      	<div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">About Us</h2></div> 
+        <p><span>Perspiciatis unde omnis iste natus error sit voluptatem. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus musull dui.</span></p>
+        <p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
+        <a href="#" title="read more" class="btn-inline " target="_self">read more</a> </div>
+        
+      
+         <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Clients</h2></div> 
+            <blockquote class="blockquote-1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
+					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+				</blockquote></div>
+          
+          <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Projects</h2></div> 
+            <div class="list styled custom-list">
+            <ul>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Singapore Township Complete Interior Design</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Mega luxury Villas Planing and Interior Design</a></li>
+            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">Commercial Shopping Mall Interior Design</a></li>
+            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">SVN Independent & Duplex Houses</a></li>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">World wide IT park</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">North Arena SNT Township Interior Design</a></li>
+            </ul>
+            </div>
+         </div>
+      </div>
+      </section>
+      
+    <section class="container">
+<div class="row">
+<div class="col-md-12">
+ <h2><span>我们的产品</span></h2>
+    <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+
+        <% navs.forEach(function (n,i) {%>
+            <div class="item ">
+                <ul class="thumbnails">
+
+                    <% n.forEach(function(a,b){%>
+                    <li class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="<%= a.imgUrl%>" alt=""></a>
+                        </div>
+                        <div class="caption">
+                            <h4><%= a.title%></h4>
+                            <p><%= a.description%></p>
+                            <a class="btn btn-mini" href="#">详细信息</a>
+                        </div>
+                    </li>
+                    <% }); %>
+                    <!--<li class="col-md-3">-->
+                        <!--<div class="thumbnail">-->
+                            <!--<a href="#"><img src="views/assets/images/portfolio/img2.jpg" alt=""></a>-->
+                        <!--</div>-->
+                        <!--<div class="caption">-->
+                            <!--<h4>Praesent commodo</h4>-->
+                            <!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                            <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="col-md-3">-->
+                        <!--<div class="thumbnail">-->
+                            <!--<a href="#"><img src="views/assets/images/portfolio/img3.jpg" alt=""></a>-->
+                        <!--</div>-->
+                        <!--<div class="caption">-->
+                            <!--<h4>Praesent commodo</h4>-->
+                            <!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                            <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="col-md-3">-->
+                        <!--<div class="thumbnail">-->
+                            <!--<a href="#"><img src="views/assets/images/portfolio/img4.jpg" alt=""></a>-->
+                        <!--</div>-->
+                        <!--<div class="caption">-->
+                            <!--<h4>Praesent commodo</h4>-->
+                            <!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                            <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div><!-- /Slide1 -->
+         <% }); %>
+
+            <!--<div class="item">-->
+                    <!--<ul class="thumbnails">-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img5.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img6.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img7.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img8.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+              <!--</div>&lt;!&ndash; /Slide2 &ndash;&gt;-->
+            <!--<div class="item">-->
+                    <!--<ul class="thumbnails">-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img1.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img2.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img3.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-3">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="#"><img src="views/assets/images/portfolio/img4.jpg" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="caption">-->
+                                <!--<h4>Praesent commodo</h4>-->
+                				<!--<p>Nullam Condimentum Nibh Etiam Sem</p>-->
+                                <!--<a class="btn btn-mini" href="#">Read More</a>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+              <!--</div>&lt;!&ndash; /Slide3 &ndash;&gt;-->
+        </div>
+        
+        <div class="control-box">                            
+            <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+            <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+        </div><!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+        
+</div><!-- /.span12 -->          
+</div><!-- /.row --> 
+</section><!-- /.container -->
+
+    <%- include footer %>
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="views/assets/js/modernizr-latest.js"></script> 
+	<script type='text/javascript' src='views/assets/js/jquery.min.js'></script>
+    <script type='text/javascript' src='views/assets/js/fancybox/jquery.fancybox.pack.js'></script>
+    
+    <script type='text/javascript' src='views/assets/js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='views/assets/js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='views/assets/js/camera.min.js'></script> 
+    <script src="views/assets/js/bootstrap.min.js"></script> 
+	<script src="views/assets/js/custom.js"></script>
+
+
+    <script>
+        (function($){
+            $('.item').first().addClass('active');
+        })(jQuery);
+    </script>
+    <script>
+		jQuery(function(){
+
+			jQuery('#camera_wrap_4').camera({
+				height: '600',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: false,
+				hover: false,
+				opacityOnGrid: false,
+				imagePath: 'views/assets/images/'
+			});
+
+		});
+	</script>
+    
+</body>
+</html>
+
