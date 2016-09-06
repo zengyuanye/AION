@@ -20,19 +20,18 @@ jQuery(document).ready(function ($) {
         var $container = $('.isotopeWrapper');
         var $resize = $('.isotopeWrapper').attr('id');
         // initialize isotope
-        $container.isotope({
-            itemSelector: '.isotopeItem',
-            resizable: false, // disable normal resizing
-            masonry: {
-                columnWidth: $container.width() / $resize
-            }
-        });
+
+
+
+
         $("a[href='#top']").click(function () {
             $("html, body").animate({
                 scrollTop: 0
             }, "slow");
             return false;
         });
+
+
         $('.navbar-inverse').on('click', 'li a', function () {
             $('.navbar-inverse .in').addClass('collapse').removeClass('in').css('height', '1px');
         });
@@ -40,6 +39,15 @@ jQuery(document).ready(function ($) {
             $('#filter a').removeClass('current');
             $(this).addClass('current');
             var selector = $(this).attr('data-filter');
+
+            $container.isotope({
+                itemSelector: '.isotopeItem',
+                resizable: false, // disable normal resizing
+                masonry: {
+                    columnWidth: $container.width() / $resize
+                }
+            });
+            console.dir($('.isotopeItem').length);
             $container.isotope({
                 filter: selector,
                 animationOptions: {
@@ -58,5 +66,7 @@ jQuery(document).ready(function ($) {
                 }
             });
         });
+
+
     }
 });

@@ -2,7 +2,7 @@
 var Contact =require('../model/contact.js');
 var Carousel=require('../model/Carousel.js');
 var news    =require('../model/news.js');
-
+var article =require('../model/article.js');
 module.exports=function (app) {
     app.get('/index',function (req,res) {
         //变量名不要和对象重名
@@ -38,8 +38,25 @@ module.exports=function (app) {
     app.get('/price',function (req,res) {
         res.render('price');
     });
+
+    //产品推送
     app.get('/projects',function (req,res) {
+        //var articles=new article;
+
+
         res.render('projects');
+        // var socket=io.connect('ws://wy:5000/');
+        //
+        // socket.on('update',function (data) {
+        //     console.dir(data.data);
+        //     res.render('projects',{projectList:data.data});
+        // });
+        // articles.list(function (err,row) {
+        //     if(err){}else{
+        //         res.render('projects',{projectList:row});
+        //     }
+        // });
+
     });
     app.get('/services',function (req,res) {
         res.render('services');

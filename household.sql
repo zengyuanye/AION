@@ -10,10 +10,46 @@ Target Server Type    : MYSQL
 Target Server Version : 50540
 File Encoding         : 65001
 
-Date: 2016-08-30 18:07:06
+Date: 2016-09-06 12:26:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for article
+-- ----------------------------
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE `article` (
+  `articleId` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `createTime` datetime DEFAULT NULL,
+  `updateTime` datetime DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `imageUrl` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `typeName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`articleId`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of article
+-- ----------------------------
+INSERT INTO `article` VALUES ('1', '2016-08-31 17:32:31', '2016-08-31 17:32:34', '　绿皮的进水腕轮(正中眉心加手枪伤害)0', 'views/assets/images/portfolio/11.jpg', '狂徒', 'print');
+INSERT INTO `article` VALUES ('2', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/8.jpg', '狂徒', 'photography');
+INSERT INTO `article` VALUES ('3', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/3.jpg', '狂徒', 'print');
+INSERT INTO `article` VALUES ('4', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/10.jpg', '狂徒', 'print');
+INSERT INTO `article` VALUES ('5', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/1.png', '狂徒', 'print');
+INSERT INTO `article` VALUES ('6', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/3.jpg', '狂徒', 'webdesign');
+INSERT INTO `article` VALUES ('7', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/7.jpg', '狂徒', 'webdesign');
+INSERT INTO `article` VALUES ('8', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/8.jpg', '狂徒', 'webdesign');
+INSERT INTO `article` VALUES ('9', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/9.jpg', '狂徒', 'webdesign');
+INSERT INTO `article` VALUES ('10', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/10.jpg', '狂徒', 'print');
+INSERT INTO `article` VALUES ('11', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/11.jpg', '狂徒', 'print');
+INSERT INTO `article` VALUES ('12', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/12.jpg', '狂徒', 'photography');
+INSERT INTO `article` VALUES ('13', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/13.jpg', '狂徒', 'photography');
+INSERT INTO `article` VALUES ('14', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/7.jpg', '狂徒', 'photography');
+INSERT INTO `article` VALUES ('15', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/9.jpg', '狂徒', 'photography');
+INSERT INTO `article` VALUES ('16', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/12.jpg', '狂徒', 'photography');
+INSERT INTO `article` VALUES ('17', '2016-08-31 17:32:03', '2016-08-31 17:32:03', '共生刺细胞生物(90%反斩杀) 3.89%', 'views/assets/images/portfolio/3.jpg', '狂徒', 'webdesign');
 
 -- ----------------------------
 -- Table structure for carousel
