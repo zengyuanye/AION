@@ -17,8 +17,8 @@ io.on('connection',function (socket) {
         articleList.list(function (err,row) {});
         var output=articleList;
         socket.emit('message', output);
-        console.log('5秒更新了一次数据');
-    },5000);
+        console.log('10秒更新了一次数据');
+    },10000);
 
 });
 
