@@ -256,15 +256,15 @@
       <workItem from="1483795179372" duration="1786000" />
       <workItem from="1483797853658" duration="250000" />
       <workItem from="1483798119951" duration="884000" />
-      <workItem from="1483799799284" duration="2440000" />
+      <workItem from="1483799799284" duration="2646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68841000" />
+    <option name="totallyTimeSpent" value="69047000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1443133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
