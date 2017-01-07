@@ -11,6 +11,6 @@
             $('.isotopeWrapper').prepend(d);
         }
     });
-
+    // http://fonts.useso.com/css?family=Lato:400,700
    
 })(jQuery);
