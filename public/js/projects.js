@@ -10,7 +10,6 @@
 
             $('.isotopeWrapper').prepend(d);
         }
-
     });
 
    
