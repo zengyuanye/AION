@@ -14,6 +14,7 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use(cookieParser());
 app.use(session({
+    resave:false,
     secret: settings.cookieSecret,
     key: settings.db,//cookie name
     cookie: {maxAge: 1000 * 60 * 60 * 24 * 30},//30 days
@@ -21,11 +22,11 @@ app.use(session({
 }));
 app.use(flash());
 app.use(bodyParser.urlencoded({ extended: true }));//extended false,只有get请求
-app.use(express.static(__dirname,'/views/assets'));
-app.use(express.static(path.join(__dirname,'public')));
+
+//负责托管 Express 应用内的静态资源。
+app.use(express.static(__dirname+'/'));
+app.use(express.static('public'));
 routes(app);
-
-
 app.listen(app.get('port'),function () {
     console.log('Express server listening on port ' +app.get('port'));
 });

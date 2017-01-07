@@ -12,22 +12,14 @@ module.exports=function (app) {
             if(err)
             {
             }else{
-
                 ad.nav(function (err,navs) {
                     ad.newsNav(function (err,rows) {
                         res.render('index', {data:row,newsList:rows,navs:navs});
                     });
                 });
-
-
             }
         });
-
-
     });
-
-
-
 
     app.get('/about',function (req,res) {
         res.render('about');
